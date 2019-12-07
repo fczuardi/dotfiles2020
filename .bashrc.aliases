@@ -1,0 +1,27 @@
+#dotconfig bare repo
+# see https://developer.atlassian.com/blog/2016/02/best-way-to-store-dotfiles-git-bare-repo/
+alias config="git --git-dir=$HOME/dotfiles/ --work-tree=$HOME"
+
+#ls
+alias ls='ls --color=auto'
+alias ll='ls -l'
+alias la='ls -la'
+
+# graphical environments
+alias x='startx'
+alias w='sway'
+
+#git
+alias gl='git log --all --graph --abbrev-commit'
+
+# vim
+alias vi=vim
+alias vimp='vim -p'
+
+#i3 workspace rename
+wname () {
+  i3-msg "rename workspace $*"
+}
+
+#set compose key
+alias ralt='setxkbmap -option compose:ralt'
