@@ -10,8 +10,8 @@ alias ll='ls -l'
 alias la='ls -la'
 
 # graphical environments
-alias x='startx'
-alias w='sway'
+alias i='startx' #i3
+alias s='MOZ_ENABLE_WAYLAND=1 sway'   #sway
 
 #git
 alias gl='git log --all --graph --abbrev-commit'
