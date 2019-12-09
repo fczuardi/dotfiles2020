@@ -10,7 +10,11 @@
 [[ $- != *i* ]] && return
 
 # prompt
-PS1='[\u@\h \W]\$ '
+# include git branch on the prompt
+# https://gist.github.com/justintv/168835
+# export PS1="\\w:\$(git branch 2>/dev/null | grep '^*' | colrm 1 2)\$ "
+# color branch name in Cyan (36)
+export PS1="\\w:\e[36m\$(git branch 2>/dev/null | grep '^*' | colrm 1 2)\e[0m\$ "
 
 
 # Setups
