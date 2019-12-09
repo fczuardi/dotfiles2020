@@ -1,3 +1,4 @@
+#!/bin/bash
 #
 # ~/.bashrc
 #
@@ -40,6 +41,11 @@ export NVM_SOURCE="/usr/share/nvm" # The AUR package installs it to here.
 # pyenv
 eval "$(pyenv init -)"
 
+# git bash completion
+# from https://github.com/git/git/blob/master/contrib/completion/git-completion.bash
+if [ -f ~/github/git/git-completion.bash ]; then
+  source ~/github/git/git-completion.bash
+fi
 
 # Aliases
 # =======
