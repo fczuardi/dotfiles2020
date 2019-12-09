@@ -35,6 +35,9 @@ export NVM_DIR="$HOME/.nvm"
 export NVM_SOURCE="/usr/share/nvm" # The AUR package installs it to here.
 [ -s "$NVM_SOURCE/nvm.sh" ] && . "$NVM_SOURCE/nvm.sh"  # Load NVM
 
+# pyenv
+eval "$(pyenv init -)"
+
 
 # Aliases
 # =======
