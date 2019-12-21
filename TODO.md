@@ -1,5 +1,10 @@
 # To do
 
+- [ ] [i3] network widget, maybe nm-applet?
+- [ ] [work] install docker
+- [ ] [work] install gitlab-runner
+- [ ] [web] audio on youtube
+- [ ] [fn-keys] make mute/unmute work
 - [ ] [pacman] gui for regular updates
 - [ ] [vim] show typed command on status line
 - [ ] [vim] space as leader
@@ -16,6 +21,12 @@
 
 # Done
 
+- [x] [sway] config multiple monitors (for my home), DP-1 right-of eDP1
+  - super easy, there was a helpful comment on the default config, use `swaymsg -t get_outputs` to list the monitors and add the proper `output` lines to the config file
+- [x] [telegram] enable native notifications
+  - libappindicator-gtk3 is required by telegram
+  - notification daemons compatible: twmn-git, notification-daemon
+  - para iniciar o notification-daemon manualmente: `/usr/lib/notification-daemon-1.0/notification-daemon`
 - [x] [bash] autocomplete for branch names
 - [x] [telegram] install telegram
 - [x] [pyenv] multiple python versions installed
