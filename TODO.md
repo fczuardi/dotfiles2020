@@ -1,5 +1,6 @@
 # To do
 
+- [ ] [sway] make Telegram-desktop work natively on wayland
 - [ ] [i3] network widget, maybe nm-applet?
 - [ ] [work] install docker
 - [ ] [work] install gitlab-runner
@@ -21,6 +22,8 @@
 
 # Done
 
+- [x] [desktop] setup printer
+  - currently using the aur/brother-hl1210w package, that although is not the specif driver for hl-1202, has the correct dependencies for running Brother's 32 bit binary drivers
 - [x] [sway] config multiple monitors (for my home), DP-1 right-of eDP1
   - super easy, there was a helpful comment on the default config, use `swaymsg -t get_outputs` to list the monitors and add the proper `output` lines to the config file
 - [x] [telegram] enable native notifications

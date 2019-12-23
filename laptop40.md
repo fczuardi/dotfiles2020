@@ -8,8 +8,11 @@ netctl 1.20-2
 dhclient 4.4.1-4
 ifplugd 0.28-15
 
-# vim with +clipboard
+# lsusb
+usbutils
 
+# vim with +clipboard
+gvim 8.1.2268-2
 
 ## sudo wifi-menu without password
 visudo
@@ -73,9 +76,6 @@ https://github.com/pyenv/pyenv-virtualenv
 
 git clone https://github.com/pyenv/pyenv-virtualenv.git $(pyenv root)/plugins/pyenv-virtualenv
 
-#### stoq pyton virtualenvs
-
-
 
 # desktop
 chromium 78.0.3904.108-1
@@ -89,103 +89,29 @@ i3status 2.13-2
 bemenu 0.1.0-1
 midori 9.0-1
 
+# telegram
+
+telegram-desktop 1.8.15-2
+libappindicator-gtk3 12.10.0-13
 
 
-autoconf 2.69-6
-automake 1.16.1-2
-base 2-2
-bemenu 0.1.0-1
-binutils 2.33.1-2
-bison 3.4.2-2
-chromium 78.0.3904.108-1
-dhclient 4.4.1-4
-dialog 1:1.3_20191110-2
-dmenu 4.9-1
-efibootmgr 16-2
-elinks 0.13-21
-fakeroot 1.24-2
-firefox 71.0-1
-flex 2.6.4-3
-gcc 9.2.0-4
-git 2.24.0-1
-grub 2:2.04-3
-gvfs 1.42.2-1
-i3-wm 4.17.1-1
-i3status 2.13-2
-ifplugd 0.28-15
-intel-ucode 20191115-2
-keepassxc 2.5.1-1
-kitty 0.15.0-1
-kitty-terminfo 0.15.0-1
-linux 5.4.1.arch1-1
-linux-firmware 20191022.2b016af-3
-m4 1.4.18-3
-make 4.2.1-4
-man-db 2.9.0-1
-man-pages 5.04-2
-midori 9.0-1
-netctl 1.20-2
-nvm 0.35.0-1
-openssh 8.1p1-2
-patch 2.7.6-8
-pkgconf 1.6.3-3
-pyenv 1.2.15-1
-rsync 3.1.3-1
-sudo 1.8.29-1
-sway 1:1.2-5
-swayidle 1.5-1
-swaylock 1.4-2
-texinfo 6.7-2
-thunar 1.8.11-1
-thunar-volman 0.9.5-2
-vi 1:070224-4
-vim 8.1.2268-2
-wget 1.20.3-2
-wpa_supplicant 2:2.9-2
-xf86-video-vesa 2.4.0-2
-xorg-bdftopcf 1.1-1
-xorg-docs 1.7.1-2
-xorg-font-util 1.3.2-1
-xorg-fonts-100dpi 1.0.3-4
-xorg-fonts-75dpi 1.0.3-4
-xorg-fonts-encodings 1.0.5-1
-xorg-iceauth 1.0.8-1
-xorg-luit 1.1.1-3
-xorg-mkfontscale 1.2.1-1
-xorg-server 1.20.6-1
-xorg-server-common 1.20.6-1
-xorg-server-devel 1.20.6-1
-xorg-server-xdmx 1.20.6-1
-xorg-server-xephyr 1.20.6-1
-xorg-server-xnest 1.20.6-1
-xorg-server-xvfb 1.20.6-1
-xorg-server-xwayland 1.20.6-1
-xorg-sessreg 1.1.2-1
-xorg-setxkbmap 1.3.2-1
-xorg-smproxy 1.0.6-2
-xorg-x11perf 1.6.1-1
-xorg-xbacklight 1.2.3-1
-xorg-xcmsdb 1.0.5-2
-xorg-xcursorgen 1.0.7-1
-xorg-xdpyinfo 1.3.2-2
-xorg-xdriinfo 1.0.6-1
-xorg-xev 1.2.3-1
-xorg-xgamma 1.0.6-2
-xorg-xhost 1.0.8-1
-xorg-xinit 1.4.1-1
-xorg-xinput 1.6.3-1
-xorg-xkbcomp 1.4.2+7+g29fda8e-1
-xorg-xkbevd 1.1.4-2
-xorg-xkbutils 1.0.4-3
-xorg-xkill 1.0.5-1
-xorg-xlsatoms 1.1.3-1
-xorg-xlsclients 1.1.4-1
-xorg-xpr 1.0.5-1
-xorg-xrandr 1.5.1-1
-xorg-xrefresh 1.0.6-1
-xorg-xsetroot 1.1.2-1
-xorg-xvinfo 1.1.4-1
-xorg-xwd 1.0.7-1
-xorg-xwininfo 1.1.5-1
-xorg-xwud 1.0.5-1
-yay 9.4.2-1
+
+# printer Brother HL1202
+
+Use the HL-1210W driver from AUR:
+`yay -S aur/brother-hl1210w`
+
+And add it to CUPs by going to `localhost:631`
+
+That is not quite the hl-1202 provided by Brother on the download pages, but is from a PKGBUILD recipe
+that includes the proper dependencies for using Brother's 32 bit drivers on a 64 machine.
+
+Alternatively, we could make a new AUR package following the instructions on:
+
+https://wiki.archlinux.org/index.php/Packaging_Brother_printer_drivers
+
+But since the hl-1210W works for hl-1202 then maybe it is ok to just keep using that one.
+
+
+
+
