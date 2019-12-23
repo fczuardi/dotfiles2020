@@ -1,3 +1,5 @@
 [user]
 	email = fabricio@fabricio.org
 	name = Fabricio C Zuardi
+[core]
+	editor = vim
