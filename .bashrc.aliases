@@ -27,3 +27,8 @@ wname () {
 
 #set compose key
 alias ralt='setxkbmap -option compose:ralt'
+
+#work second monitor off, on/left
+alias d2off='xrandr --output DP-2-2 --off'
+#work second monitor on
+alias d2on='xrandr --output eDP-1 --auto --output DP-2-2 --auto --left-of eDP-1'
