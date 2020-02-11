@@ -47,6 +47,11 @@ if [ -f ~/github/git/git-completion.bash ]; then
   source ~/github/git/git-completion.bash
 fi
 
+# Android
+export ANDROID_SDK_ROOT=~/Android/Sdk
+export JAVA_HOME=/usr/lib/jvm/default
+export PATH="$PATH:$ANDROID_SDK_ROOT/platform-tools"
+
 # Aliases
 # =======
 if [ -e ~/.bashrc.aliases ] ; then
