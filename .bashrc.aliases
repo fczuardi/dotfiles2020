@@ -11,7 +11,9 @@ alias la='ls -la'
 
 # graphical environments
 alias i='startx' #i3
-alias s='MOZ_ENABLE_WAYLAND=1 sway'   #sway
+# those env vars are needed for telegram-desktop and firefox to run natively on wayland
+# qt5-wayland pacman package needs to be installed see https://wiki.archlinux.org/index.php/Wayland#Qt_5
+alias s='QT_QPA_PLATFORM=wayland-egl MOZ_ENABLE_WAYLAND=1 sway'   #sway
 
 #git
 alias gl='git log --all --graph --abbrev-commit'
