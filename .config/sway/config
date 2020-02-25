@@ -224,3 +224,6 @@ include /etc/sway/config.d/*
 # 100% wayland, prevent xwayland compatibility layer
 xwayland disable
 exec export MOZ_ENABLE_WAYLAND=1
+
+# notifications daemon
+exec mako
