@@ -52,6 +52,12 @@ noremap <leader>8 8gt
 noremap <leader>9 9gt
 noremap <leader>0 :tablast<cr>
 
+"Ctrl T to create a new tab
+nnoremap <C-t> :tabnew<Space>
+inoremap <C-t> <Esc>:tabnew<Space>
+
+
+" Plugins
 call plug#begin('~/.vim/plugged')
 
 " Git diff lines on the gutter (sign column)
