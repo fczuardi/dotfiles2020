@@ -66,4 +66,8 @@ Plug 'airblade/vim-gitgutter'
 " Javascript and jsx (React)
 Plug 'chemzqm/vim-jsx-improve', { 'for': 'javascript' }
 
+" Markdown with JSX (MDX)
+Plug 'jxnblk/vim-mdx-js', { 'for': 'markdown.mdx' }
+
+
 call plug#end()
