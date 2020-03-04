@@ -32,6 +32,9 @@ set updatetime=500
 " display typed keys
 set showcmd
 
+" show tab complete options on statusbar
+set wildmenu
+
 " always display filename on the bottom, even for a single screen
 set laststatus=2
 
