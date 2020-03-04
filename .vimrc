@@ -72,6 +72,19 @@ Plug 'chemzqm/vim-jsx-improve', { 'for': 'javascript' }
 " Markdown with JSX (MDX)
 Plug 'jxnblk/vim-mdx-js', { 'for': 'markdown.mdx' }
 
+" Auto pair brackets, parens and quotes
+Plug 'jiangmiao/auto-pairs'
+" this plugins uses some shortcuts with Alt on insert mode, and kitty terminal
+" escapes Alt+e as e so we need to remap the escaped sequence back to Meta key
+
+" Fast Wrap - to bring to inside the empty pair the things right after it
+" example (|)[foo, bar] becomes ([foo, bar])
+set <M-e>=e
+" Toggle Autopairs
+set <M-p>=p
+" Jump to next closed pair
+set <M-n>=n
+
 " Themes
 " ------
 
