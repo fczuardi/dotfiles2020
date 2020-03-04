@@ -52,6 +52,10 @@ export ANDROID_SDK_ROOT=~/Android/Sdk
 export JAVA_HOME=/usr/lib/jvm/default
 export PATH="$PATH:$ANDROID_SDK_ROOT/platform-tools"
 
+# Deno
+export DENO_INSTALL="/home/fcz/.local"
+export PATH="$DENO_INSTALL/bin:$PATH"
+
 # Aliases
 # =======
 if [ -e ~/.bashrc.aliases ] ; then
